@@ -32,7 +32,7 @@ npm install @smallpot/table-layout
 
 | 方法名 | 说明 | 参数 | 是否必传 | 默认值 |
 |-|-|-|-|-|
-| active | 对象初始化，启用事件监听 | - | - | - |
+| active | 对象初始化，启用事件监听，这个方法必须执行 | - | - | - |
 | mergeTdFn | 合并选中单元格 | - | - | - |
 | disassemblyFn | 拆解选中单元格 | - | - | - |
 | delEntireColumn | 删除选中单元格整列 | - | - | - |
@@ -83,6 +83,8 @@ npm install @smallpot/table-layout
       attr:{}
     }
   });
+
+  obj.active();//这个方法必须执行
 
    document.getElementById("mergeTd").addEventListener('click',e=>{
       obj.mergeTdFn();
