@@ -1,3 +1,8 @@
+
+## 预览
+
+![image text](https://github.com/SmallPot/table-layout/blob/main/public/preview.gif)
+
 ## Install
 
 ```
